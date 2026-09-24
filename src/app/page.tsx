@@ -108,7 +108,6 @@ export default function HomePage() {
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-3 px-4 lg:px-8">
           <Logo />
           <nav className="flex items-center gap-1.5 sm:gap-2">
-            <ThemeToggle />
             <Link
               href="/pricing"
               className="hidden rounded-full px-3 py-2 text-[13px] font-semibold text-muted-foreground transition-colors hover:text-foreground sm:block"
