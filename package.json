@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "supabase": "supabase",
-    "build:dev": "next build"
+    "build:dev": "next build && rm -rf dist && mkdir -p dist && cp -r public/. dist/ && cp -r .next/static dist/static"
   },
   "overrides": {
     "rolldown": "1.2.1"
