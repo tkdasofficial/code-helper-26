@@ -331,6 +331,16 @@ export default function HomePage() {
               Every medium, one prompt box
             </h2>
           </div>
+          <div className="border-b border-border">
+            <img
+              src={studioPhoto.src}
+              alt="Hyper Copilot studio: AI video generation on a laptop beside printed virtual model portraits, a storyboard, and a phone showing the published post"
+              loading="lazy"
+              width={1600}
+              height={912}
+              className="h-auto w-full object-cover grayscale"
+            />
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
             {studio.map((f, i) => {
               const Icon = f.icon;
