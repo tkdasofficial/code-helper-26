@@ -23,7 +23,6 @@ import {
   AtSign,
 } from "lucide-react";
 import { Logo } from "@/components/hyper/Logo";
-import { ThemeToggle } from "@/components/hyper/ThemeToggle";
 import { useSession } from "@/hooks/useSession";
 
 const marquee = [
