@@ -137,11 +137,7 @@ export default function HomePage() {
             aria-hidden
             className="pointer-events-none absolute inset-0 [background-image:linear-gradient(to_right,color-mix(in_oklab,var(--foreground)_5%,transparent)_1px,transparent_1px),linear-gradient(to_bottom,color-mix(in_oklab,var(--foreground)_5%,transparent)_1px,transparent_1px)] [background-size:56px_56px] [mask-image:radial-gradient(ellipse_70%_60%_at_50%_35%,black,transparent)]"
           />
-          <span className="relative inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.18em] text-muted-foreground">
-            <span className="h-1.5 w-1.5 rounded-full bg-foreground" />
-            The generative studio that publishes for you
-          </span>
-          <h1 className="relative mx-auto mt-6 max-w-5xl text-[52px] font-extrabold leading-[0.92] tracking-[-0.045em] sm:text-7xl lg:text-[104px]">
+          <h1 className="relative mx-auto max-w-5xl text-[52px] font-extrabold leading-[0.92] tracking-[-0.045em] sm:text-7xl lg:text-[104px]">
             Create. Schedule.
             <br />
             <span className="text-outline">Publish.</span> Repeat.
