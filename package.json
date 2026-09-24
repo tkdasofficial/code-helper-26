@@ -9,7 +9,8 @@
     "start": "next start -p 3000 -H 0.0.0.0",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "supabase": "supabase"
+    "supabase": "supabase",
+    "build:dev": "next build"
   },
   "overrides": {
     "rolldown": "1.2.1"
@@ -72,7 +73,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.32.0",
-    "@lovable.dev/vite-tanstack-config": "^2.15.0",
+    "@lovable.dev/vite-tanstack-config": "2.23.1",
     "@tailwindcss/postcss": "^4.2.1",
     "@types/node": "^22.16.5",
     "@types/react": "^19.2.0",
