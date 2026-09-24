@@ -17,13 +17,24 @@ import {
   PlugZap,
   UserSquare,
   Workflow,
-  Youtube,
-  Instagram,
-  Facebook,
-  AtSign,
 } from "lucide-react";
+import { siYoutube, siInstagram, siFacebook, siThreads } from "simple-icons";
 import { Logo } from "@/components/hyper/Logo";
 import { useSession } from "@/hooks/useSession";
+import studioPhoto from "@/assets/studio-monochrome.jpg";
+
+function BrandIcon({ path, title }: { path: string; title: string }) {
+  return (
+    <svg
+      role="img"
+      aria-label={title}
+      viewBox="0 0 24 24"
+      className="h-5 w-5 shrink-0 fill-current"
+    >
+      <path d={path} />
+    </svg>
+  );
+}
 
 const marquee = [
   "Text to Image",
