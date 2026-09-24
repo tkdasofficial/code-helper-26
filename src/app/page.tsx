@@ -17,13 +17,24 @@ import {
   PlugZap,
   UserSquare,
   Workflow,
-  Youtube,
-  Instagram,
-  Facebook,
-  AtSign,
 } from "lucide-react";
+import { siYoutube, siInstagram, siFacebook, siThreads } from "simple-icons";
 import { Logo } from "@/components/hyper/Logo";
 import { useSession } from "@/hooks/useSession";
+import studioPhoto from "@/assets/studio-monochrome.jpg";
+
+function BrandIcon({ path, title }: { path: string; title: string }) {
+  return (
+    <svg
+      role="img"
+      aria-label={title}
+      viewBox="0 0 24 24"
+      className="h-5 w-5 shrink-0 fill-current"
+    >
+      <path d={path} />
+    </svg>
+  );
+}
 
 const marquee = [
   "Text to Image",
@@ -78,10 +89,10 @@ const pipeline = [
 ];
 
 const platforms = [
-  { name: "YouTube & Shorts", icon: Youtube },
-  { name: "Instagram Reels", icon: Instagram },
-  { name: "Facebook Reels", icon: Facebook },
-  { name: "Threads", icon: AtSign },
+  { name: "YouTube & Shorts", path: siYoutube.path },
+  { name: "Instagram Reels", path: siInstagram.path },
+  { name: "Facebook Reels", path: siFacebook.path },
+  { name: "Threads", path: siThreads.path },
 ];
 
 const included = [
@@ -290,18 +301,15 @@ export default function HomePage() {
               </p>
             </div>
             <div className="mt-9 grid grid-cols-2 gap-3 lg:grid-cols-4">
-              {platforms.map((pl) => {
-                const Icon = pl.icon;
-                return (
-                  <div
-                    key={pl.name}
-                    className="flex items-center gap-3 rounded-2xl border border-background/20 px-4 py-4 transition-colors hover:bg-background/10"
-                  >
-                    <Icon className="h-5 w-5 shrink-0" strokeWidth={1.8} />
-                    <span className="text-[13px] font-bold">{pl.name}</span>
-                  </div>
-                );
-              })}
+              {platforms.map((pl) => (
+                <div
+                  key={pl.name}
+                  className="flex items-center gap-3 rounded-2xl border border-background/20 px-4 py-4 transition-colors hover:bg-background/10"
+                >
+                  <BrandIcon path={pl.path} title={pl.name} />
+                  <span className="text-[13px] font-bold">{pl.name}</span>
+                </div>
+              ))}
             </div>
             <div className="mt-6 flex items-center gap-2.5 text-[12.5px] opacity-70">
               <CalendarClock className="h-4 w-4 shrink-0" strokeWidth={1.9} />
@@ -322,6 +330,16 @@ export default function HomePage() {
             >
               Every medium, one prompt box
             </h2>
+          </div>
+          <div className="border-b border-border">
+            <img
+              src={studioPhoto.src}
+              alt="Hyper Copilot studio: AI video generation on a laptop beside printed virtual model portraits, a storyboard, and a phone showing the published post"
+              loading="lazy"
+              width={1600}
+              height={912}
+              className="h-auto w-full object-cover grayscale"
+            />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
             {studio.map((f, i) => {
