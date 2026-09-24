@@ -165,6 +165,21 @@ export default function HomePage() {
               See pricing
             </Link>
           </div>
+          <dl className="relative mx-auto mt-14 grid max-w-3xl grid-cols-2 gap-y-8 border-t border-border pt-8 sm:grid-cols-4">
+            {[
+              ["8+", "Creative engines"],
+              ["4", "Social platforms"],
+              ["1", "Prompt box"],
+              ["24/7", "Auto-publishing"],
+            ].map(([value, label]) => (
+              <div key={label} className="text-center">
+                <dt className="order-2 mt-1 text-[11px] font-bold uppercase tracking-[0.16em] text-muted-foreground">
+                  {label}
+                </dt>
+                <dd className="text-3xl font-extrabold tracking-[-0.03em] sm:text-4xl">{value}</dd>
+              </div>
+            ))}
+          </dl>
         </section>
 
         {/* Marquee */}
