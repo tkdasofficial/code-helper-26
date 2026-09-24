@@ -141,10 +141,10 @@ export default function HomePage() {
             <span className="h-1.5 w-1.5 rounded-full bg-foreground" />
             The generative studio that publishes for you
           </span>
-          <h1 className="relative mx-auto mt-6 max-w-4xl text-[40px] font-extrabold leading-[0.98] tracking-[-0.04em] sm:text-6xl lg:text-7xl">
+          <h1 className="relative mx-auto mt-6 max-w-5xl text-[52px] font-extrabold leading-[0.92] tracking-[-0.045em] sm:text-7xl lg:text-[104px]">
             Create. Schedule.
             <br />
-            <span className="text-muted-foreground">Publish. Repeat.</span>
+            <span className="text-outline">Publish.</span> Repeat.
           </h1>
           <p className="relative mx-auto mt-5 max-w-xl text-[14px] leading-relaxed text-muted-foreground sm:text-base">
             Hyper Copilot unifies image, video, voice and virtual AI models — then ships the

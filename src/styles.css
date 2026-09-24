@@ -262,3 +262,8 @@
 @utility animate-marquee {
   animation: marquee 28s linear infinite;
 }
+
+@utility text-outline {
+  -webkit-text-stroke: 2px var(--foreground);
+  color: transparent;
+}
